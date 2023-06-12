@@ -10,9 +10,9 @@
 **Clone and install**
 
 ```bash
-git clone https://github.com/push-based/ws-perf-ngbe-230323.git
+git clone https://github.com/push-based/boku-perf-ws-140623.git
 
-cd ws-perf-ngbe-230323
+cd boku-perf-ws-140623
 npm install
 
 # (optional) if the step before didn't work, please try the following
