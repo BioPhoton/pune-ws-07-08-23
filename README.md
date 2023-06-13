@@ -35,5 +35,8 @@ npm run start
 * [Performance Tab](./exercises/performance-tab-flame-charts.md)
 * [JS Event Loop](./exercises/event-loop.md)
 * [Scheduling - Chunk Work](./exercises/scheduling-chunk-work.md)
+* [Scheduling - Prioritize Work](./exercises/scheduling-prioritize-work.md)
 * [Network Optimizations](./exercises/network-optimizations.md)
-* TBD
+* [CSS Performance - Containment](./exercises/css-performance%20-%20containment.md)
+* [CSS Performance - Forced Reflow](./exercises/dom-access%20-%20forced%20reflow.md)
+* [CSS Performance - Layout Thrashing](./exercises/dom-access%20-%20layout%20thrashing.md)
