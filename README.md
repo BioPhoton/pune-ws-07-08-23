@@ -10,9 +10,9 @@
 **Clone and install**
 
 ```bash
-git clone https://github.com/push-based/boku-perf-ws-140623.git
+git clone https://github.com/push-based/datev-perf-ws-170723.git
 
-cd boku-perf-ws-140623
+cd datev-perf-ws-170723
 npm install
 
 # (optional) if the step before didn't work, please try the following
@@ -27,8 +27,8 @@ npm run start
 
 ## Workshop Information
 
-* [ws info doc](https://docs.google.com/document/d/1Go5CmUz-aVf2yOOfn0_ZhI7ugXr1CgNqfLmSRoW2uEE/edit?usp=drive_link)
-* [slides](https://drive.google.com/drive/u/1/folders/1AL3CCr40D99Sqz5ztPCyjIRjpp01rNIk)
+* [ws info doc](https://docs.google.com/document/d/19aI18XS--bjEG9EjHUGls-Q74P8Y7PA9ZGyRgqOO240/edit?usp=drive_link)
+* [slides](https://drive.google.com/drive/u/1/folders/1TFoIQmomA6eDnieKracJTGvQFze3KlbW)
 
 ## Exercises
 

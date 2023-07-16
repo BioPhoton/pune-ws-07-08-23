@@ -17,7 +17,7 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./movie-list.component.scss'],
 })
 export class MovieListComponent implements AfterViewInit {
-  @Input() movies!: MovieModel[];
+  @Input({ required: true }) movies!: MovieModel[];
 
   @ViewChild('movieList') movieList!: ElementRef<HTMLElement>;
 
