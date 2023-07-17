@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import {map, Observable, of} from 'rxjs';
 import { environment } from '../../environments/environment';
 import { TMDBMovieCreditsModel } from '../shared/model/movie-credits.model';
 import { TMDBMovieDetailsModel } from '../shared/model/movie-details.model';
 import { TMDBMovieGenreModel } from '../shared/model/movie-genre.model';
 import { TMDBMovieModel } from '../shared/model/movie.model';
 import { MovieModel } from './movie-model';
+import * as result from '../data/movies-mock.json';
 
 @Injectable({
   providedIn: 'root',
@@ -27,7 +28,7 @@ export class MovieService {
     page: string = '1',
     sortBy = 'popularity.desc'
   ): Observable<TMDBMovieModel[]> {
-    return this.httpClient
+    /*return this.httpClient
       .get<{ results: TMDBMovieModel[] }>(
         `${environment.tmdbBaseUrl}/3/discover/movie`,
         {
@@ -37,7 +38,8 @@ export class MovieService {
             sort_by: sortBy,
           },
         }
-      )
+      )*/
+    return of(result as any as {results: TMDBMovieModel[]})
       .pipe(map(({ results }) => results));
   }
 
@@ -48,9 +50,7 @@ export class MovieService {
   }
 
   getMovieRecommendations(id: string): Observable<{ results: MovieModel[] }> {
-    return this.httpClient.get<{ results: MovieModel[] }>(
-      `${environment.tmdbBaseUrl}/3/movie/${id}/recommendations`
-    );
+    return  of(result as any as {results: TMDBMovieModel[]});
   }
 
   getMovieById(id: string): Observable<TMDBMovieDetailsModel> {
@@ -66,21 +66,12 @@ export class MovieService {
   ): Observable<TMDBMovieModel[]> {
     const { tmdbBaseUrl: baseUrl } = environment;
 
-    return this.httpClient
-      .get<{ results: TMDBMovieModel[] }>(`${baseUrl}/3/movie/${category}`, {
-        params: { page, sort_by: sortBy },
-      })
+    return  of(result as any as {results: TMDBMovieModel[]})
       .pipe(map(({ results }) => results));
   }
 
   searchMovies(query: string): Observable<MovieModel[]> {
-    return this.httpClient
-      .get<{ results: MovieModel[] }>(
-        `${environment.tmdbBaseUrl}/3/search/movie/`,
-        {
-          params: { query },
-        }
-      )
+    return of(result as any as {results: TMDBMovieModel[]})
       .pipe(map(({ results }) => results));
   }
 
