@@ -1,5 +1,5 @@
 import {
-  AfterViewInit,
+  AfterViewInit, ChangeDetectionStrategy,
   Component,
   ElementRef,
   Inject,
@@ -15,6 +15,7 @@ import { DOCUMENT } from '@angular/common';
   selector: 'movie-list',
   templateUrl: './movie-list.component.html',
   styleUrls: ['./movie-list.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MovieListComponent implements AfterViewInit {
   @Input({ required: true }) movies!: MovieModel[];

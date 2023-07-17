@@ -1,21 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import {
-  concat,
-  exhaustMap,
-  filter,
-  map,
-  Observable,
-  shareReplay,
-  Subject, switchMap, tap,
-} from 'rxjs';
-import { TMDBMovieModel } from '../../shared/model/movie.model';
-import { MovieService } from '../movie.service';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {concat, exhaustMap, filter, map, Observable, shareReplay, Subject, switchMap, tap,} from 'rxjs';
+import {TMDBMovieModel} from '../../shared/model/movie.model';
+import {MovieService} from '../movie.service';
 
 @Component({
   selector: 'movie-list-page',
   templateUrl: './movie-list-page.component.html',
   styleUrls: ['./movie-list-page.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MovieListPageComponent implements OnInit {
   movies$ = this.activatedRoute.params.pipe(switchMap(params => {

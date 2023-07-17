@@ -67,4 +67,6 @@ export class MovieSearchControlComponent
   }
 
   setDisabledState(isDisabled: boolean): void {}
+
+  trackMovie = (i: number, movie: MovieModel) => movie.id;
 }
