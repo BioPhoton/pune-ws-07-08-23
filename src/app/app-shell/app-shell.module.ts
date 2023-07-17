@@ -10,22 +10,24 @@ import { DarkModeToggleModule } from '../ui/component/dark-mode-toggle/dark-mode
 import { SearchBarModule } from '../ui/component/search-bar/search-bar.module';
 import { AppShellComponent } from './app-shell.component';
 import { FastSvgModule } from '@push-based/ngx-fast-svg';
+import {DirtyChecksComponent} from "../shared/dirty-checking/dirty-check.component";
 
 
 @NgModule({
   declarations: [AppShellComponent],
-  imports: [
-    CommonModule,
-    HamburgerButtonModule,
-    RxLet,
-    SideDrawerModule,
-    SearchBarModule,
-    DarkModeToggleModule,
-    HttpClientModule,
-    RouterModule,
-    FormsModule,
-    FastSvgModule,
-  ],
+    imports: [
+        CommonModule,
+        HamburgerButtonModule,
+        RxLet,
+        SideDrawerModule,
+        SearchBarModule,
+        DarkModeToggleModule,
+        HttpClientModule,
+        RouterModule,
+        FormsModule,
+        FastSvgModule,
+        DirtyChecksComponent,
+    ],
   exports: [AppShellComponent],
 })
 export class AppShellModule {}

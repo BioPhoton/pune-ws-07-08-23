@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ElementVisibilityDirective } from '../../shared/cdk/element-visibility/element-visibility.directive';
 import { MovieModule } from '../movie.module';
 import { MovieListPageComponent } from './movie-list-page.component';
+import {DirtyChecksComponent} from "../../shared/dirty-checking/dirty-check.component";
 
 const routes: Routes = [
   {
@@ -14,11 +15,12 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [MovieListPageComponent],
-  imports: [
-    RouterModule.forChild(routes),
-    CommonModule,
-    MovieModule,
-    ElementVisibilityDirective,
-  ],
+    imports: [
+        RouterModule.forChild(routes),
+        CommonModule,
+        MovieModule,
+        ElementVisibilityDirective,
+        DirtyChecksComponent,
+    ],
 })
 export class MovieListPageModule {}

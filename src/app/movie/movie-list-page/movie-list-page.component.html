@@ -1,5 +1,5 @@
 <ng-container *ngIf="movies$ | async as movies; else: loader">
-
+  <dirty-checks></dirty-checks>
   <movie-list
     *ngIf="movies && movies.length > 0; else: elseTmpl"
     [movies]="movies">
