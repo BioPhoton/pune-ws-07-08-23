@@ -1,0 +1,130 @@
+{
+    "title": "Movie detail navigation",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 1086,
+            "height": 882,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "https://angular-movies-a12d3.web.app/list/category/popular",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://angular-movies-a12d3.web.app/list/category/popular",
+                    "title": "HubMovies"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/poster movie GUARDIANS OF THE GALAXY VOL. 3 ★ ★ ★ ★ ★",
+                    "aria/poster movie"
+                ],
+                [
+                    "a:nth-of-type(2) > img"
+                ],
+                [
+                    "xpath//html/body/app-root/app-shell/div/div[2]/ct-movies-list/article/ui-movie-list/ui-grid-list/a[2]/img"
+                ],
+                [
+                    "pierce/a:nth-of-type(2) > img"
+                ]
+            ],
+            "offsetY": 149.92822265625,
+            "offsetX": 135.6199951171875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Dave Bautista[role=\"img\"]"
+                ],
+                [
+                    "article.movie-detail-wrapper a:nth-of-type(3) img"
+                ],
+                [
+                    "xpath//html/body/app-root/app-shell/div/div[2]/ct-movie/article[1]/ui-detail-grid/div[2]/div/section[4]/div/div/a[3]/picture/img"
+                ],
+                [
+                    "pierce/article.movie-detail-wrapper a:nth-of-type(3) img"
+                ]
+            ],
+            "offsetY": 31.5703125,
+            "offsetX": 28.8125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Sort"
+                ],
+                [
+                    "#sort"
+                ],
+                [
+                    "xpath///*[@id=\"sort\"]"
+                ],
+                [
+                    "pierce/#sort"
+                ]
+            ],
+            "offsetY": 28.3828125,
+            "offsetX": 274.40625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Votes Average"
+                ],
+                [
+                    "li:nth-of-type(2) > button"
+                ],
+                [
+                    "xpath//html/body/app-root/app-shell/div/div[2]/ct-person/article[2]/div/ul/li[2]/button"
+                ],
+                [
+                    "pierce/li:nth-of-type(2) > button"
+                ],
+                [
+                    "text/Votes Average"
+                ]
+            ],
+            "offsetY": 7.8828125,
+            "offsetX": 237.40625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/poster movie WWE RAW 15TH ANNIVERSARY ★ ★ ★ ★ ★",
+                    "aria/poster movie"
+                ],
+                [
+                    "a:nth-of-type(1) > img"
+                ],
+                [
+                    "xpath//html/body/app-root/app-shell/div/div[2]/ct-person/article[2]/ui-movie-list/ui-grid-list/a[1]/img"
+                ],
+                [
+                    "pierce/a:nth-of-type(1) > img"
+                ]
+            ],
+            "offsetY": 375.99853515625,
+            "offsetX": 249.1199951171875
+        }
+    ]
+}
