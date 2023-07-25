@@ -57,12 +57,15 @@ Now that we have the dimension pushed to us, we can use it in order to determine
   <summary>Adjust position determination</summary>
 
 ```ts
-// tilt.directive.ts
+// tilt.directive.ts - in ngOnInit 
+
+// Replace this line
+// const pos = determineDirection(pageX, target as HTMLElement);
+
 
 // use offsetX instead of pageX
 // determine position by using the stored width and compare it to the offsetX
-const pos > this.middle ? 1 : 0;
-
+const pos = offsetX > this.middle ? 1 : 0;
 ```
 </details>
 
